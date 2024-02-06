@@ -20,3 +20,4 @@ dependencies:
     repository: https://gomods.github.io/athens-charts
     version: 0.7.1
     condition: athens-proxy.enabled
+    
