@@ -3,6 +3,28 @@ entries:
   pkgsite:
   - apiVersion: v2
     appVersion: 0.1.0
+    created: "2024-02-25T14:50:07.041996536Z"
+    dependencies:
+    - name: postgresql
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 13.1.5
+    - condition: redis.enabled
+      name: redis
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 18.1.6
+    - condition: athens-proxy.enabled
+      name: athens-proxy
+      repository: https://gomods.github.io/athens-charts
+      version: 0.7.1
+    description: A Helm chart for Kubernetes
+    digest: b5b83f73c9b66892144f74a4ee3e7e9b03d568be4d70cc40d47eaabbd21813d1
+    name: pkgsite
+    type: application
+    urls:
+    - https://github.com/natigavriel/pkgsite/releases/download/pkgsite-0.3.0/pkgsite-0.3.0.tgz
+    version: 0.3.0
+  - apiVersion: v2
+    appVersion: 0.1.0
     created: "2023-10-23T10:50:12.00441733Z"
     dependencies:
     - name: postgresql
@@ -23,4 +45,4 @@ entries:
     urls:
     - https://github.com/natigavriel/pkgsite/releases/download/pkgsite-0.2.0/pkgsite-0.2.0.tgz
     version: 0.2.0
-generated: "2024-02-06T10:50:12.00447463Z"
+generated: "2024-02-25T14:50:07.042006284Z"
